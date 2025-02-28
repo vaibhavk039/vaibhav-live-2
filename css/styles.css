@@ -9,9 +9,9 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color:black;
+    --first-color:#00A1E0;
     --white-color: #FAFAFF;
-    --dark-color: black;
+    --dark-color: #00A1E0;
     --text-color: #697477;
 }
 
@@ -249,6 +249,7 @@ img{
     color: var(--first-color);
 }
 
+
 /* ===== SKILLS =====*/
 .skills__container{
     row-gap: 2rem;
@@ -273,6 +274,7 @@ img{
 .skills__img img{
     border-radius: .5rem;
 }
+
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
@@ -485,5 +487,16 @@ img{
     .home__img {
         width: 500px;
         right: 24%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
