@@ -500,3 +500,107 @@ img{
         transform: translateY(0);
     }
 }
+/* Fixing navbar for small screens */
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        padding: 10px 0;
+    }
+
+    .nav__menu.show {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+
+    .nav__toggle {
+        display: block; /* Ensure toggle button is visible */
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 50px;
+        top: 8px;
+        z-index: 1000;
+    }
+    .whatsapp{
+        position:relative;
+        left:-400px;
+        width: 50px;
+        height:50px;
+        bottom:80px;
+    }
+}
+
+/* Ensure images don't overlap and are properly aligned */
+.home__img, .about__img img, .portfolio__img .whatsapp img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Adjust spacing for sections */
+.section {
+    padding: 2rem 1rem;
+}
+
+/* Prevent text overlap with images */
+.about__container, .portfolio__container, .skills__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fix portfolio grid for different screen sizes */
+@media screen and (max-width: 600px) {
+    .portfolio__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Adjust footer alignment */
+.footer__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fix overlapping images in skills section */
+.skills__container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+

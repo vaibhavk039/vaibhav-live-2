@@ -11,6 +11,27 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Vaibhav's Portfolio</title>
+        <script>
+            console.log("JavaScript is working!");
+
+            document.addEventListener("DOMContentLoaded", function () {
+                console.log("JavaScript Loaded");
+            
+                const toggle = document.getElementById("nav-toggle");
+                const menu = document.getElementById("nav-menu");
+            
+                if (!toggle || !menu) {
+                    console.error("nav-toggle or nav-menu not found!");
+                    return;
+                }
+            
+                toggle.addEventListener("click", function () {
+                    console.log("Toggle Clicked");
+                    menu.classList.toggle("show");
+                });
+            });
+            </script>
+             
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -19,7 +40,7 @@
                 <div>
                     <a href="#" class="nav__logo">Vaibhav Kaushik</a>
                 </div>
-
+        
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
@@ -32,19 +53,28 @@
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
-
+        
+                <!-- Menu Toggle Button -->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
-
+        
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
                     <h1 class="home__title"><span>H</span><br>LLO.</h1>
-
+               
+                    <a href="https://wa.me/7388568809" target="_blank" style="position:relative; left:400px; top:20px;">
+                    
+                            <img class="whatsapp" style="width: 100px; height: 100px; background-color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"src="img/pic16.gif" alt="Chat on WhatsApp" width="100" height="100">
+                        
+                    </a>
+           
+                    
+                    
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
@@ -186,7 +216,7 @@
                         <span class="skills__name">Salesforce Customization & Configuration</span>
                         <span class="skills__name">Next Best Action Flows</span>
                         <span class="skills__name">Azure Deployment</span>
-                        <img style="top:170px;"src="img/pic14.png" alt="" class="home__img">
+                        <img style="top:0px;"src="img/pic14.png" alt="" class="home__img">
 
                         <h3 class="skills__subtitle"> Web Development</h3>
                         <span class="skills__name">HTML</span>
