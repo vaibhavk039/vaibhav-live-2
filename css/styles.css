@@ -778,6 +778,7 @@ nav {
         left: -125px;
         font-weight: bold;
         white-space: nowrap;
+        display:none;
            
       }
   }
@@ -888,6 +889,7 @@ nav {
         left: -125px;
         font-weight: bold;
         white-space: nowrap;
+        display: none;
            
       }
   }
