@@ -182,7 +182,8 @@ img{
         max-width: 600px;
         text-align: justify;
         position:relative;
-        top:100px;
+        left:-90px;
+        top:120px;
         
 }
 .home__title2 {
@@ -191,6 +192,8 @@ img{
     color: white;
     max-width: 600px;
     text-align: justify;
+    position:relative;
+    left:-90px;
     
 }
 
@@ -212,10 +215,11 @@ img{
 }
 .home__img3{
     position: absolute;
-    right: 0;
+    left: 1000px;
     bottom: 0;
-    width: 295px;
-    top:250px;
+    width: auto;
+    height: auto;
+    bottom:80px;
 }
 .home__img2{
     width: 295px;
@@ -572,8 +576,8 @@ img{
 
 /* Ensure images don't overlap and are properly aligned */
 .home__img,.home__img3, .about__img img, .portfolio__img  {
-    max-width: 100%;
-    height: auto;
+   
+    
     display: block;
     margin: 0 auto;
 }

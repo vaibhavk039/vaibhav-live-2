@@ -66,8 +66,8 @@ sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle', {})
-sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
-sr.reveal('.skills__img', {delay: 400})
+sr.reveal('.skills__name', {distance: '20px', delay: 10, interval: 10})
+sr.reveal('.skills__img', {delay: 10})
 
 /*SCROLL PORTFOLIO*/
 sr.reveal('.portfolio__img', {interval: 200})
