@@ -182,7 +182,7 @@ img{
         max-width: 600px;
         text-align: justify;
         position:relative;
-        left:-90px;
+        left:-50px;
         top:120px;
         
 }
@@ -193,7 +193,7 @@ img{
     max-width: 600px;
     text-align: justify;
     position:relative;
-    left:-90px;
+    left:-50px;
     
 }
 
@@ -215,10 +215,10 @@ img{
 }
 .home__img3{
     position: absolute;
-    left: 1000px;
+    left: 900px;
     bottom: 0;
-    width: auto;
-    height: auto;
+    width: 60px;
+    height: 500px;
     bottom:80px;
 }
 .home__img2{
@@ -684,6 +684,8 @@ nav {
         text-align: justify;
         position: relative;
         top:60px;
+        left:5px;
+        padding: 10px;
     }
     .home__title2{
         font-size: 15px;
@@ -693,6 +695,8 @@ nav {
         text-align: justify;
         position: relative;
         top: -40px;
+        left:5px;
+        padding: 10px;
     }
     
     .checkbtn {
@@ -739,7 +743,7 @@ nav {
         position:fixed;      
        
         top:350px;
-        right: 90px;
+        right: 50px;
         
         
     }
@@ -767,7 +771,7 @@ nav {
         margin: 0 auto;
         position: absolute;
         top:360px;
-        right: 60px;
+        left: 150px;
         width: 250px;
         display: flex; 
         align-items: center; 
@@ -795,6 +799,7 @@ nav {
         text-align: justify;
         position: relative;
         top:60px;
+        padding: 10px;
     }
     .home__title2{
         font-size: 15px;
@@ -804,6 +809,7 @@ nav {
         text-align: justify;
         position: relative;
         top: -40px;
+        padding: 10px;
     }
     
     .checkbtn {
@@ -850,7 +856,7 @@ nav {
         position:fixed;      
        
         top:370px;
-        right: 90px;
+        right: 60px;
         
         
     }
